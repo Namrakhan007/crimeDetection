@@ -1,0 +1,178 @@
+body {
+    background: linear-gradient(-45deg, #528bee, #e9f1f2, #0f7bda, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+header ul li{
+    display: inline-block;
+    margin: 0 25px;
+
+}
+header ul li:last-child{
+    margin-right: 0;
+}
+header ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+}
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.navbar{
+    padding: 0 0 rem;
+}
+li:hover{
+    color: black;
+}
+.nav-item{
+    /* font-size: 1rem;
+    justify-content: space-between; */
+    font-weight: bold;
+}
+header .navbar li:hover{
+    /* letter-spacing: .75rem; */
+    color: var(--main-color) ;
+    font-size: 1.25rem;
+}
+header .navbar li::selection{
+    color: rgb(61, 115, 202);
+}
+.nav-link::selection{
+    color: rgb(61, 115, 202);
+}
+header .navbar li :active:after{
+    width: 100%;
+}
+
+
+/* .header_inner{
+    background-color: #f5f7f9;
+    position: sticky;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    padding: 0px 100px;
+} */
+.home-content{
+    margin: 1rem;
+    padding: 1rem;
+    padding-left: 8rem;
+
+    align-items: center;
+
+}
+.rotate20{
+
+    /* -webkit-transform:rotate(20deg);  
+    -moz-transform: rotate(20deg);  
+    -ms-transform: rotate(20deg);  
+    -o-transform: rotate(20deg);  
+    transform: rotate(20deg);   */
+    transform: rotate(20deg);
+    border-radius: 15%;
+    border:5px solid rgb(101, 174, 247);
+    margin: 1rem 5rem;
+
+    
+}
+
+button{
+    align-items: center;
+}
+.second{
+    background-color: #f5f7f9;
+}
+.inner2{
+    background-color: #528bee;
+    margin: 0.25rem;
+    padding-top: 10px;
+    border: 1rem solid  #ffff;
+    border-radius: 0 50% 50% 50%;
+
+
+}
+.earth{
+    border-radius: 45%;
+    margin: 7rem;
+
+}
+@media (max-width:1028px){
+    #title{
+         text-align: center;
+    }
+    .rotate20{
+         position: static;
+         transform: rotate(0);
+         align-items: center;
+         
+    }
+    .earth{
+        position: static;
+        align-items: center;
+    }
+}
+.third{
+    /* background-image: url(globe.jpg); */
+    background:  linear-gradient(-45deg, #528bee, #e9f1f2, #0f7bda, #23d5ab);;
+
+    
+    
+}
+.col-lg-12{
+    display: grid;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start:1;
+    grid-column-end:8;
+     
+}
+.city{
+    border-radius: 80% 80% 0 0;
+    max-width: 100%;
+    height: auto;
+    margin: 4rem 1rem;
+    backdrop-filter: blur(2px);
+
+
+}
+*,::before,::after{
+    box-sizing: border-box;
+}
+.text{
+    color: black;
+    font-size: 0.75rem;
+    margin: 4rem 1rem;
+}
+.forth{
+    background-color: #ffff;
+    
+
+}
+
+.forth p{
+    margin:1rem 6rem;
+    font-size: 10px;
+    text-align: center;
+}
+.forth h3{
+    margin: 1rem 6rem;
+}
+.loging{
+    font-weight: bold;
+    background-color: rgb(61, 115, 202);
+}

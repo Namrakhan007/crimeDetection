@@ -1,0 +1,119 @@
+<%- include("partials/header"); -%>
+<div>
+<section> 
+    <div class="container reveal">
+        <div class="home-content">
+          <div class="row">
+            <div class="col-lg-6 " >
+              <h1 class="heading" style="font-family:'Montserrat-Black', sans-serif;font-weight: bold ; font-size: 3rem; line-height: 1.5;">United for a safer future. </h1>
+              <p style="font-family:'Montserrat-Black', sans-serif ; font-size: 1.5rem;">Take the first step towards a safer world by downloading our app and connecting with others. Join us in building a community where safety and security are the bedrock of all our interactions and relationships.</p>
+              <button type="button" class="btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i> Download</button>
+    
+              <button type="button" class="btn btn-outline-light btn-lg dnld-button"><i class="fa-brands fa-google-play"></i> Download</button>
+           </div>
+            <div class="col-lg-6">
+              <img  src="k.jpg" style="width: 50%;" alt="iphone-mockup" class="rotate20">
+            </div>
+          </div>
+       </div>
+      </div>
+        
+    
+    <div class="container reveal">
+      <div class="forth">
+          <div class="row">
+              <div class="col-lg-6 " >
+                <h3  class="heading"  style="font-family:'Montserrat-Black', sans-serif;font-weight: bold ; line-height: 1.5; color: rgb(70, 137, 219);"><i class="fa fad fa-video"></i>  (Face Recognition)Real time video </h3>
+                <p style="font-family:'Montserrat-Black', sans-serif ; font-size: 1rem;">crime detecting app uses real-time video module to help enhance public safety in your community. With our advanced technology, the app can detect and alert you to potential criminal activity in real-time, allowing you to take action and prevent crime before it happens.this module is designed to respect individual rights and freedoms while maximizing public safety, ensuring data security, and providing transparency in its use. Trust our app to keep you and your community safe..</p>
+    
+              
+              
+              </div>
+              <div class="col-lg-6">
+                  <h3 class="heading"  style="font-family:'Montserrat-Black', sans-serif;font-weight: bold ;  line-height: 1.5;color: rgb(70, 137, 219)"><i class="fa fas fa-microphone-alt"></i>  Audio Visualisation </h3>
+                  <p style="font-family:'Montserrat-Black', sans-serif ; font-size: 1rem;">With this feature, the app can detect and analyze sound patterns in your environment, alerting you to potential criminal activity such as gunshots, car accidents, or other disturbances. This audio visualization feature works in tandem with our real-time video module to provide a comprehensive and reliable crime detection solution. Trust our app to keep you and your community safe by providing advanced and innovative technology to detect and prevent crime in real-time.
+                  </p>
+    
+              </div>
+              <div class="col-lg-6 " >
+                  <h3  class="heading" style="font-family:'Montserrat-Black', sans-serif;font-weight: bold ; line-height: 1.5; color: rgb(70, 137, 219);"><i class="fa fas fa-map-marked-alt"></i>  Location tracking </h3>
+                  <p style="font-family:'Montserrat-Black', sans-serif ; font-size: 1rem;">This module help you to stay informed and aware of potential safety risks in your area. With this feature, the app can provide real-time updates on crime activity and incidents, as well as location-based safety alerts and recommendations. Our location tracking module is designed to provide accurate and reliable information to keep you and your loved ones safe wherever you go. Trust our app to keep you informed and empowered with the latest safety information at all times.</p>
+        
+                
+            </div>
+            <div class="col-lg-6 " >
+              <h3  class="heading" style="font-family:'Montserrat-Black', sans-serif;font-weight: bold ; line-height: 1.5; color: rgb(70, 137, 219);"><i class="fas fa-level-up-alt"></i> violence categorisation </h3>
+              <p style="font-family:'Montserrat-Black', sans-serif ; font-size: 1rem;">this module helps to quickly identify the severity of potential safety risks in your area. This feature uses advanced algorithms to analyze real-time video and audio data, categorizing incidents into different levels of violence. With this feature, you can quickly assess the situation and take appropriate action to stay safe. Trust our app to provide reliable and accurate violence categorization to help you stay informed and empowered in any situation.</p>
+    
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="container reveal">
+      <div class="row" >
+        <div class="col-lg-12 " >
+          <img src="city.gif" alt="" style="width: 960px;     align-items: centre; " class="city" >
+    
+      </div>
+    </div>
+    </div> 
+    <div class="text" id="text">
+    
+      <div class="text-content">
+        <p ><i class="fa-solid fa-quote-left" style=" font-size: 1rem;"></i></p>
+        <p class="salogen"></p>
+      </div>
+    </div>
+    
+    
+            <div class="row">
+                
+                <div class="col-lg-6">
+                  <img  src="earth.gif" style="width: 50%;" alt="iphone-mockup" class="earth">
+                </div>
+                <div class="col-lg-6 " >
+                    <h1 style="font-family:'Montserrat-Black', sans-serif;font-weight: bold ; font-size: 3rem; line-height: 1.5;">United for a safer future. </h1>
+                    <p style="font-family:'Montserrat-Black', sans-serif ; font-size: 1.5rem;">Take the first step towards a safer world by downloading our app and connecting with others. Join us in building a community where safety and security are the bedrock of all our interactions and relationships.</p>
+                    <button type="button" class="btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i> Download</button>
+      
+                    <button type="button" class="btn btn-outline-light btn-lg dnld-button"><i class="fa-brands fa-google-play"></i> Download</button>
+            
+                  
+                  
+                  </div>
+              </div>  
+          
+        </div>
+    </div>
+    </section>
+  </div>
+
+    <script>
+    ScrollReveal({
+      reset: true,
+      distance: "80px",
+      duration: 2000,
+      delay: 200,
+    });
+    ScrollReveal().reveal(".home-content,.heading,.city,.text-content", {
+      origin: "top",
+    });
+    window.addEventListener("scroll", reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealtop = reveal[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+        if (revealtop < windowHeight - revealpoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    </script>
+    
+    
+<%- include("partials/footer"); -%>
